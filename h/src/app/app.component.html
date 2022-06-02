@@ -1,0 +1,28 @@
+<!-- <button  (click)="onCreateServer()">Display Details</button> -->
+
+<button (click)=onCreateServer() >Display Details</button>  
+<div *ngIf="showSecreat">password = bahubali</div>  
+
+<!-- <div *ngFor="let a of newArray"><div *ngIf="a>5"><p style="background: red;">{{a}} </p> -->
+   <div *ngFor="let count of counter">  
+       <p [ngStyle]="{backgroundColor:getColor(count)}">{{count}}</p>
+ 
+
+
+</div>
+   <hr>
+   
+    <div *ngFor="let i of numbersArray">  
+        
+        <p [ngStyle]="{backgroundColor : i % 2 ==0 ?' yellow':'blue'}">{{i}}</p>
+  
+ 
+ </div>
+  
+
+
+   
+
+
+
+    
